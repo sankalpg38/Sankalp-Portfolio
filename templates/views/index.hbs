@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MyWeb</title>
+</head>
+
+<body>
+
+    {{>navbar}}
+
+    <div class="container-fluid mt-5">
+
+        <div class="row">
+            <div class="col-mid-10 col-12 mx-auto">
+                <div class="row">
+                    <div
+                        class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+                        <h1>SANKALP</h1>
+                        <h1>GARG</h1>
+                        <p>Computer Science Undergrad from <span class="bold-style">NIT durgapur</span> having excellent
+                            problem solving skills and
+                            ability to perform well in a team. I am Passionate about coding and learning new skills.</p>
+                        <button class="btn-style btn btn-outline-dark">Read More</button>
+                    </div>
+                    <div class="col-md-6 col-12 hero-text order-md-1 order-0">
+                        <figure>
+                            <img src="images/img1.jpg" alt="Image" class="responsive">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- about us start --}}
+    {{>about}}
+    {{!-- about us ends --}}
+
+    {{!-- my skills start --}}
+    {{>skill}}
+    {{!-- my skills ends --}}
+
+    {{!-- map start --}}
+    {{>maps}}
+    {{!-- map ends --}}
+
+    {{!-- contact start --}}
+    {{>contact}}
+    {{!-- contact ends --}}
+
+    {{!-- footer start --}}
+    {{>footer}}
+    {{!-- footer ends --}}
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+
+</html>
