@@ -20,8 +20,7 @@ const userSchema = mongoose.Schema({
     phone:{
         type: Number,
         required: true,
-        min: 100000,
-        max: 100000000000
+        min: 100
        
     },
     message:{

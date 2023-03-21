@@ -33,16 +33,18 @@ app.post("/contact", async(req,res)=>{
         // res.send(req.body);
         const userData = new User(req.body);
         const exist=await User.find({email:req.body.email});
-        if(exist)
-        {
-            console.log('email exist');
-            return res.status(500).send(error);
-        }
+        // if(exist)
+        // {
+        //     console.log('email exist');
+        //     exist = false
+        //     return res.status(500).render("error");
+        // }
         await userData.save();
         //alert("Message sent Successfully!")
+        
         return res.status(201).render("index");
     }catch(error){
-       return  res.status(500).send(error);
+       return  res.status(500).render("error");
     }
 })
 
